@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url("https://i.ytimg.com/vi/exxji9vqjSw/maxresdefault.jpg");
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+      font-size: 20px;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      height: 300px;
+      width: 200px;
+      margin: 10px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="http://www.iceskating.org.uk/is/cache/file/DB3A571C-B3D4-8978-846B4C90FABA7FB8_feature-block.jpg">
+    <h1>Lucy & Andreea's Blog</h1>
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">SnowBording</a></li>
+      <li><a href="#">Ice Skating</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Snowbording Styles</h2>
+    <p>My favorite one :)</p>
+    <p>Freestyle snowboarding is any riding that includes performing tricks. In freestyle, the rider utilizes natural and man-made features such as rails, jumps, boxes, and innumerable others to perform tricks. It is a popular all-inclusive concept that distinguishes the creative aspects of snowboarding, in contrast to a style like alpine snowboarding.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Ice Skating</h2>
+    <p></p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2> A bit of history :-) </h2>
+    <p>Snowboard tricks are aerials or maneuvers performed on snowboards for fun, or in competitions. Most often, these maneuvers are performed on obstacles such as jumps, halfpipes, quarterpipes, hips, handrails, funboxes, or ledges, or on the surface of the snow. Many have their origins in precursory board sports such as skateboarding and surfing.
+    </p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
